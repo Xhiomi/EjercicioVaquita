@@ -1,5 +1,5 @@
 module.exports = {
-  historia: function(personaje, lugar, edad) {
+  historia: function(personaje, edad, viajeEnElTiempo, villano, lugar, hobby) {
     if(edad > 18 && edad < 80) {
       return `${personaje} vivía una triste
       existencia porque no lograba encontrar
