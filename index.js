@@ -11,7 +11,7 @@ const lugar = "Ningún lugar";
 const hobby = "Programar";
 
 console.log(intro.historia(personaje, edad, lugar));
-
+console.log(nudo.nudo(personaje,edad,villano,lugar,hobby));
 console.log(cowsay.say({
   text : 'hola',
   e : "x-o",
