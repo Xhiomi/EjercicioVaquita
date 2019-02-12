@@ -1,5 +1,5 @@
 module.exports = {
-  historia: function(personaje, lugar, edad) {
+  historia: function(personaje, edad, viajeEnElTiempo, villano, lugar, hobby) {
     if(edad - viajeEnElTiempo) {
       return `${personaje} viajó en el tiempo ${viajeEnElTiempo}
       años al pasado y

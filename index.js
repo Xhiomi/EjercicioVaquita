@@ -18,7 +18,7 @@ console.log(cowsay.say({
   T : "v "
 }));
 
-console.log(final.historia(personaje, edad, villano, lugar, hobby));
+console.log(final.historia(personaje, edad, viajeEnElTiempo, villano, lugar, hobby));
 
 // Math.round();
 // Math.floor();
