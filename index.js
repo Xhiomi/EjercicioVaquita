@@ -5,6 +5,7 @@ const final = require('./final');
 
 const personaje = "Vaquita";
 const edad = Math.floor(Math.random() * 100);
+const viajeEnElTiempo = (Math.floor(Math.random() * 10));
 const villano = "Suegra";
 const lugar = "Ningún lugar";
 const hobby = "Programar";
@@ -17,6 +18,8 @@ console.log(cowsay.say({
   T : "v "
 }));
 
-Math.round();
-Math.floor();
-Math.ceil();
+console.log(final.historia(personaje, edad, villano, lugar, hobby));
+
+// Math.round();
+// Math.floor();
+// Math.ceil();
