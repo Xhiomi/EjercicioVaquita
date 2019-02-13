@@ -2,6 +2,7 @@ const cowsay = require('cowsay');
 const intro = require('./intro');
 const nudo = require('./nudo');
 const final = require('./final');
+const constantes = require('./constantes');
 
 const personaje = "Vaquita";
 const edad = Math.floor(Math.random() * 100);
@@ -18,7 +19,7 @@ console.log(cowsay.say({
   T : "v "
 }));
 
-console.log(final.historia(personaje, edad, viajeEnElTiempo, villano, lugar, hobby));
+console.log(final.historia());
 
 // Math.round();
 // Math.floor();
