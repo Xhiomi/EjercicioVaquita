@@ -1,5 +1,5 @@
 module.exports = {
-    nudo:function (personaje,edad,villano,lugar,hobby) {
+    nudo:function (personaje, edad, villano, lugar, hobby) {
         if (edad > 20 && edad < 50) {
             return `Durante la noche ${personaje} tuvo un sueño donde la secuestraba ${villano} en una nave espacial. Ahí la forzaban a ${hobby} por horas y horas mientras sufría un gran dolor.`
         } else if (edad > 50) {

@@ -1,25 +1,29 @@
-const cowsay = require('cowsay');
+var cowsay = require('cowsay');
+const fs = require('fs');
 const intro = require('./intro');
 const nudo = require('./nudo');
 const final = require('./final');
 const constantes = require('./constantes');
 
-const personaje = "Vaquita";
-const edad = Math.floor(Math.random() * 100);
-const viajeEnElTiempo = (Math.floor(Math.random() * 10));
-const villano = "Suegra";
-const lugar = "Ningún lugar";
-const hobby = "Programar";
+let personaje = "Vaquita";
+let edad = Math.floor(Math.random() * 100);
+let viajeEnElTiempo = (Math.floor(Math.random() * 10));
+let villano = "suegra";
+let lugar = "Ningún lugar";
+let hobby = "programar";
 
-console.log(intro.historia(personaje, edad, lugar));
-console.log(nudo.nudo(personaje,edad,villano,lugar,hobby));
+const introHistoria = intro.historia(personaje, edad, lugar)
+const nudoHistoria = nudo.nudo(personaje, edad, villano, lugar, hobby)
+const finalHistoria = final.historia()
+const historiaCompleta = introHistoria + nudoHistoria + finalHistoria
+
+console.log(historiaCompleta);
+
 console.log(cowsay.say({
   text : 'hola',
   e : "x-o",
   T : "v "
 }));
-
-console.log(final.historia());
 
 // Math.round();
 // Math.floor();
